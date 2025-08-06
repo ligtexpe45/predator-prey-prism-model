@@ -59,11 +59,13 @@ Other scripts in the repository provide additional analysis and plotting capabil
 - **1_One Region Simulation/**: Simulation outputs and plots for one region.
 - **1_Population_vs_systemParameters/**: Population vs system parameter analysis and plots.
 - **1_tigers_extinction_probability_vs_initialGoats_and_initialTigers/**: Extinction probability heatmaps and data.
+- **1_Goats and Tigers extinction probability vs maxPop/**: Extinction probability vs max population for goats and tigers.
 
 ### Two Regions
 - **2_averagepop_vs_maxpop_after100_starthalf1_zero2/**: Plots and data for average populations vs max population region 1 start at half of max population, region 2 starts at zero).
 - **2_synchronization_vs_migration/**: Synchronization analysis and plots for migration scenarios.
 - **2_Two Regions Simulations/**: Simulation outputs and plots for two regions.
+- **2_Goats and Tigers extinction probability vs maxPop/**: Extinction probability vs max population for goats and tigers in two regions.
 
 ### Three Regions
 - **3_extinction_vs_migration_rate/**: Extinction probability vs migration rate analysis and plots for three regions.
