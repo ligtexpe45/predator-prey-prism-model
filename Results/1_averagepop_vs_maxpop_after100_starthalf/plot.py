@@ -7,7 +7,7 @@ avg_goats = []
 avg_tigers = []
 
 # Read and parse the file
-with open("/home/mohamed/PycharmProjects/PythonProject/Results/m_average_pop_after100_starthalf_noex/data.txt", "r") as file:
+with open("/home/mohamed/PycharmProjects/PythonProject/Results/1_averagepop_vs_maxpop_after100_starthalf/data.txt", "r") as file:
     lines = file.readlines()
 
 i = 0
@@ -65,7 +65,7 @@ plt.plot(max_values, goat_pct, marker='o', label="Goats % of Max", color='green'
 plt.plot(max_values, tiger_pct, marker='s', label="Tigers % of Max", color='red')
 plt.xlabel("Max Population")
 plt.ylabel("Percentage of Max")
-plt.ylim(0, 1)
+plt.ylim(0, 0.5)
 plt.title("Goats and Tigers as % of Max Population")
 plt.legend()
 plt.grid(True)

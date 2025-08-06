@@ -6,7 +6,7 @@ for max in $(seq 50 50 500); do
       grep "Result"
 done
 
-P=? [ F<=100 (tigers = 0) ]
+P=? [ F<=100 (t1 + t2 = 0) ]
 
 max=50  Result: 0.95 (+/- 0.05752955035472988 with probability 0.99; rel err 0.06055742142603146)
 max=100  Result: 0.63 (+/- 0.1274428020417875 with probability 0.99; rel err 0.2022901619710913)
