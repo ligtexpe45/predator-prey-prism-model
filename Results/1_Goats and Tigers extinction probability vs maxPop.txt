@@ -1,0 +1,61 @@
+for max in $(seq 100 100 1000); do
+    echo -n "max=$max  "
+    prism model.prism m.props -sim -simsamples 100 -const maxPop=$max | \
+      grep "Result"
+done
+
+P=? [ F<=100 (tigers = 0) ]
+
+max=100  Result: 0.94 (+/- 0.06268790076336504 with probability 0.99; rel err 0.06668925613123941)
+max=200  Result: 0.65 (+/- 0.12590265118348665 with probability 0.99; rel err 0.1936963864361333)
+max=300  Result: 0.28 (+/- 0.11851939849803031 with probability 0.99; rel err 0.42328356606439393)
+max=400  Result: 0.13 (+/- 0.08877189223840337 with probability 0.99; rel err 0.6828607095261797)
+max=500  Result: 0.04 (+/- 0.051726106184558036 with probability 0.99; rel err 1.293152654613951)
+max=600  Result: 0.03 (+/- 0.0450288306878362 with probability 0.99; rel err 1.5009610229278734)
+max=700  Result: 0.0 (+/- 0.0 with probability 0.99; rel err 0.0)
+max=800  Result: 0.0 (+/- 0.0 with probability 0.99; rel err 0.0)
+max=900  Result: 0.01 (+/- 0.0262640545728517 with probability 0.99; rel err 2.62640545728517)
+max=1000  Result: 0.0 (+/- 0.0 with probability 0.99; rel err 0.0)
+
+------------------------------------------------------------------------------------------------------------
+
+goats
+
+for max in $(seq 10 10 300); do
+    echo -n "max=$max  "
+    prism model.prism m.props -sim -simsamples 100 -const maxPop=$max | \
+      grep "Result"
+done
+
+P=? [ F<=100 (goats = 0) ]
+
+max=10  Result: 0.61 (+/- 0.12874826814326187 with probability 0.99; rel err 0.21106273466108505)
+max=20  Result: 0.47 (+/- 0.13174405863018004 with probability 0.99; rel err 0.28030650772378735)
+max=30  Result: 0.32 (+/- 0.12313276173474297 with probability 0.99; rel err 0.38478988042107176)
+max=40  Result: 0.27 (+/- 0.11718917232432174 with probability 0.99; rel err 0.434033971571562)
+max=50  Result: 0.17 (+/- 0.09915341616779688 with probability 0.99; rel err 0.5832553892223346)
+max=60  Result: 0.12 (+/- 0.0857780430401305 with probability 0.99; rel err 0.7148170253344208)
+max=70  Result: 0.12 (+/- 0.0857780430401305 with probability 0.99; rel err 0.7148170253344208)
+max=80  Result: 0.1 (+/- 0.07918910408324277 with probability 0.99; rel err 0.7918910408324277)
+max=90  Result: 0.1 (+/- 0.07918910408324277 with probability 0.99; rel err 0.7918910408324277)
+max=100  Result: 0.05 (+/- 0.05752955035472988 with probability 0.99; rel err 1.1505910070945975)
+max=110  Result: 0.02 (+/- 0.03695491523884663 with probability 0.99; rel err 1.8477457619423314)
+max=120  Result: 0.04 (+/- 0.051726106184558036 with probability 0.99; rel err 1.293152654613951)
+max=130  Result: 0.07 (+/- 0.06734954547223375 with probability 0.99; rel err 0.9621363638890534)
+max=140  Result: 0.02 (+/- 0.03695491523884663 with probability 0.99; rel err 1.8477457619423314)
+max=150  Result: 0.01 (+/- 0.0262640545728517 with probability 0.99; rel err 2.62640545728517)
+max=160  Result: 0.01 (+/- 0.0262640545728517 with probability 0.99; rel err 2.62640545728517)
+max=170  Result: 0.04 (+/- 0.051726106184558036 with probability 0.99; rel err 1.293152654613951)
+max=180  Result: 0.0 (+/- 0.0 with probability 0.99; rel err 0.0)
+max=190  Result: 0.01 (+/- 0.0262640545728517 with probability 0.99; rel err 2.62640545728517)
+max=200  Result: 0.0 (+/- 0.0 with probability 0.99; rel err 0.0)
+max=210  Result: 0.0 (+/- 0.0 with probability 0.99; rel err 0.0)
+max=220  Result: 0.0 (+/- 0.0 with probability 0.99; rel err 0.0)
+max=230  Result: 0.0 (+/- 0.0 with probability 0.99; rel err 0.0)
+max=240  Result: 0.0 (+/- 0.0 with probability 0.99; rel err 0.0)
+max=250  Result: 0.01 (+/- 0.0262640545728517 with probability 0.99; rel err 2.62640545728517)
+max=260  Result: 0.0 (+/- 0.0 with probability 0.99; rel err 0.0)
+max=270  Result: 0.01 (+/- 0.0262640545728517 with probability 0.99; rel err 2.62640545728517)
+max=280  Result: 0.0 (+/- 0.0 with probability 0.99; rel err 0.0)
+max=290  Result: 0.0 (+/- 0.0 with probability 0.99; rel err 0.0)
+max=300  Result: 0.0 (+/- 0.0 with probability 0.99; rel err 0.0)
