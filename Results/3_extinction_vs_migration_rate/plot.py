@@ -14,7 +14,7 @@ plt.ylabel("P(goats extinct)")
 plt.title("Goat Extinction Probability vs. Migration Rate")
 plt.grid(True)
 plt.tight_layout()
-plt.savefig(os.path.join(OUT_DIR, "goats_extinction_vs_mig2.pdf"), format='pdf')
+plt.savefig(os.path.join(OUT_DIR, "goats_extinction_vs_mig.pdf"), format='pdf')
 plt.show()
 
 # ─── Plot 2: tigers ──────────────────────────────────────────────────────────
@@ -27,5 +27,5 @@ plt.xlim(left=0)  # Ensure x-axis is between
 plt.title("Tiger Extinction Probability vs. Migration Rate")
 plt.grid(True)
 plt.tight_layout()
-plt.savefig(os.path.join(OUT_DIR, "tigers_extinction_vs_mig2.pdf"), format='pdf')
+plt.savefig(os.path.join(OUT_DIR, "tigers_extinction_vs_mig.pdf"), format='pdf')
 plt.show()
