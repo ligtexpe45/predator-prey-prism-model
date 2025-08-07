@@ -72,6 +72,16 @@ Other scripts in the repository provide additional analysis and plotting capabil
 
 Other subfolders contain PDF plots, data files, and additional scripts for each scenario. Refer to each folder for its specific results and analysis.
 
+## PRISM Model Files and Properties
+
+The following PRISM model files define the system dynamics for different region scenarios:
+
+- **model.prism**: PRISM model for one region.
+- **mg.prism**: PRISM model for two regions.
+- **mg_3.prism**: PRISM model for three regions.
+
+The main properties used for analysis are defined in **prop.props**. Additional or scenario-specific properties can be found in other `.props` files or in data files within the Results subdirectories.
+
 ## License
 This project is for academic and research purposes. Please cite appropriately if used in publications.
 

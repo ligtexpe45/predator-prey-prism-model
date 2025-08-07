@@ -1,0 +1,41 @@
+ctmc
+
+const int maxPop = 1000; // 1000
+
+// Rate‐parameters
+const double c1 = 1.0;   // goat birth “rate”
+const double c2 = 0.02 / (maxPop/100);  // predation “rate” per (goat,tiger) pair
+const double c3 = 1.0;    // tiger death “rate”
+const int init_goats = floor(maxPop/2); // floor(maxPop/2)
+const int init_tigers = floor(maxPop/2); // floor(maxPop/2)
+
+module LotkaVolterra
+    goats : [0..maxPop] init init_goats;    // assume an upper bound
+    tigers: [0..maxPop] init init_tigers;
+
+    // Goat reproduction (G -> G+1) at rate c1*G
+    [grow] (goats>0) & (goats<maxPop) -> c1 * goats : (goats' = goats + 1);
+
+    // Predation (G->G-1, T->T+1) at rate c2*G*T
+    [predate] (goats>0 & tigers>0) & (tigers<maxPop) -> c2 * goats * tigers : (goats' = goats - 1) & (tigers' = tigers + 1);
+
+    // Tiger death (T->T-1) at rate c3*T
+    [die] (tigers>0) -> c3 * tigers : (tigers' = tigers - 1);
+endmodule
+
+// Rewards definition
+rewards "goat_population"
+    true : goats;  // Reward = current number of goats (instantaneous)
+endrewards
+
+rewards "tiger_population"
+    true : tigers;  // Reward = current number of tigers (instantaneous)
+endrewards
+
+rewards "time"
+    true : 1;  // Time advances at rate 1 per time unit
+endrewards
+
+rewards "goats_at_tiger_extinction"
+  [die] (tigers = 1) : goats;
+endrewards

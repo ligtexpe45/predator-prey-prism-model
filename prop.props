@@ -1,0 +1,22 @@
+//
+
+//P=? [ F<=100 (goats = 0) ]
+//P=? [ F<=100 (tigers = 0) ]
+
+
+//P=? [ F<=100 (g1 + g2 = 0) ]
+//P=? [ F<=100 (t1 + t2 = 0) ]
+
+//R{"goat_population"}=? [ C<=400 ]
+//R{"tiger_population"}=? [ C<=400 ]
+
+//R{"goat_population"}=? [ S ]
+//R{"tiger_population"}=? [ S ]
+
+//R{"g1"}=? [ C<=100 ]
+//R{"g2"}=? [ C<=100 ]
+//R{"t1"}=? [ C<=100 ]
+//R{"t2"}=? [ C<=100 ]
+
+
+//P=? [ F<=400 (tigers = 0) ]
