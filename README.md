@@ -31,6 +31,21 @@ python 3_plot_three_regions.py
 
 Each script reads simulation data (e.g., `populations.txt`) and generates plots in the Results directory.
 
+### Running PRISM Simulations
+To generate a sample simulation path, execute the following command:
+```bash
+prism model.prism -simpath 90000 "populations.txt"
+```
+Adjust the simulation path length and model filename according to your specific requirements.
+
+## Experiments and Data Collection
+
+This repository uses two different ways to run experiments:
+
+1. **Shell Script Experiments**: Some experiments use shell scripts. You can find these script commands in data text files, and Python code is used to extract and plot the data.
+
+2. **Python Script Experiments**: Other experiments run commands directly in Python scripts for easier execution.
+
 ## Main Scripts
 
 ### One Region
